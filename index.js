@@ -1,10 +1,10 @@
-//import "dotenv/config";
+import "dotenv/config";
 import express from "express";
 
 const app = express();
 const port = process.env.PORT || 3000;
 
-
+/*
 app.get("/", (req, res) => {
   res.send("Hello from Hitesh and his tea!");
 });
@@ -15,9 +15,9 @@ app.get("/ice-tea", (req, res) => {
 
 app.get("/twitter", (req, res) => {
   res.send("hiteshdotcom");
-});
+});*/
 
-/*
+
 app.use(express.json());
 
 let teaData = [];
@@ -73,7 +73,7 @@ app.delete("/teas/:id", (req, res) => {
 
   teaData.splice(index, 1);
   res.status(204).send("Deleted");
-});*/
+});
 
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}/`);
